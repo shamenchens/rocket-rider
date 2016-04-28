@@ -1,0 +1,54 @@
+.root {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background: url('rocket.jpg'), #000000;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.blockquote-container:first-child {
+  padding-top: 10vh;
+}
+
+.blockquote-container:last-child {
+  padding-bottom: 10vh;
+}
+
+.blockquote {
+  width: 80vw;
+  text-align: center;
+  text-indent: -2rem;
+  font-size: 1.6rem;
+  color: #ffffff;
+}
+
+.blockquote:before,
+.blockquote:after {
+  color: #990000;
+  font-size: 3rem;
+  margin-right: 0.25rem;
+  vertical-align: -0.4rem;
+}
+
+.blockquote:before {
+  content: open-quote;
+}
+
+.blockquote:after {
+  content: close-quote;
+  visibility: hidden;
+}
+
+
+.blockquote .quote_from {
+  color: #888888;
+}
+
+.blockquote .quote_from:before {
+  content: ' - ';
+}
